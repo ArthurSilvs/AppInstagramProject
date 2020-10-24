@@ -10,7 +10,7 @@ import camera from '../assets/camera.svg';
 
 // import { Container } from './styles';
 
-function components() {
+export default function Header() {
   return (
       <header id="main-header">
           <div className="header-content">
@@ -25,5 +25,3 @@ function components() {
       </header>
   );
 }
-
-export default components;
