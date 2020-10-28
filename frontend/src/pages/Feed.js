@@ -16,7 +16,7 @@ class Feed extends Component  {
     async componentDidMount(){
         //this.registerToSocket();
 
-        const response = await api.get('posts');
+        const response = await api.get('/posts');
 
         this.setState({ feed: response.data });
     }

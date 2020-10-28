@@ -7,6 +7,12 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
+mongoose.connect('mongodb+srv://rootinho:rootinho@cluster0.dw2vc.mongodb.net/<dbname>?retryWrites=true&w=majority',
+ {useNewUrlParser: true, 
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+});
+
 mongoose.connect('mongodb+srv://rootinho:rootinho@cluster0.dw2vc.mongodb.net/<dbname>?retryWrites=true&w=majority', { 
     useNewUrlParser: true,
 });
